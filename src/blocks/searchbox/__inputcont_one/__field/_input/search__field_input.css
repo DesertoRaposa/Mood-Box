@@ -1,0 +1,25 @@
+.search__field_input{
+    width: 440px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border: 0;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    outline:none;
+}
+
+
+
+
+@media (max-width: 320px) {
+    .search__field_input{
+		max-width: 288px;
+		height: 56px;
+    }
+} 
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .search__field_input{
+       
+    }
+} 

@@ -6,18 +6,68 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="Author" content="Хайруллина Резеда">
 	<title> Mood Box </title>
-
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
 </head>
-
 <body>
 	<div class="page">
 		<header class="header">
-			Hello! Catch a wave of mood!
+			<nav class="header__content">
+				<h3 class="header__logo">
+					Mood Box.
+				</h3>
+				<div class="header__container">
+					<a class="header__menu" href="#"> Home </a>
+					<a class="header__menu" href="#"> About </a>
+					<a class="header__menu" href="#"> Contact </a>
+				</div>
+			</nav>
 		</header>
-		<footer class="footer">
-		</footer>
-	</div>
-	<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+		<section class="searchbox">
+			<div class="searchbox__inputcont_one">
+				<h1 class="search__title">
+				Choose your mood today </h1>
+				<form class="search__field">
+					<input type="text" name="name" class="search__field_input" placeholder="morning breakfast">
+					<button class="search__field_button"> Найти </button>
+				</form>
+			</div>
+			<div class="searchbox__inputcont_two">
+			</div>
+		</section>
+		<section class="moodboard">
+			<!--
+			<div class="moodboard__card">
+				<a class="card__cover" href="#"> </a>
+					<div class="card__like-wrap">
+						<button class="card__like-icon"></button>
+					</div>
+					<div class="card__descr">
+						<div class="card__tags">
+							<a class = "tag" href="#"> #morning </a>
+							<a class = "tag" href="#">  #breakfast </a>
+							<a class = "tag" href="#"> #orange </a>
+							<a class = "tag" href="#"> #fresh </a>
+							<a class = "tag" href="#"> #energetic </a>
+							<a class = "tag" href="#"> #food </a>
+						</div>
+					</div>
+			</div>
+		-->
+	</section>
+	<footer class="footer">
+		<div class="footer__columns">
+			<p class="footer__author">
+				© 2020 Rezeda Khairullina
+			</p>
+			<div class="footer__social">
+				<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img src="<%=require('./images/gh.png')%>" alt="Вернуться на главную страницу"> </a>
+				<a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img src="<%=require('./images/facebook.png')%>" alt="Вернуться на главную страницу"> </a>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
+

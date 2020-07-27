@@ -1,0 +1,6 @@
+.card__descr {
+	width: 300px;
+    height: 70px;
+    align-self: flex-end;
+    display: flex;
+}

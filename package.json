@@ -43,6 +43,8 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "imagemin-pngquant": "^5.0.1",
+    "pngquant-bin": "^3.1.1"
   }
 }

@@ -1,0 +1,40 @@
+.search__field_button{
+    width: 168px;
+    background: #2b2b2b;
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+	  color: #b6bcbf;
+    font-family: 'Montserrat', sans-serif;
+    outline:none;
+}
+
+.search__field_button:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+  .search__field_button:active {
+    color: #fff;
+    cursor: pointer;
+  }
+
+
+@media (max-width: 320px) {
+    .search__field_button{
+		width: 288px;
+		height: 56px;
+		margin-top: 16px;
+		
+    }
+} 
+
+.error {
+  margin-top: 10px;
+  width: 570px;
+  border-radius: 100px;
+  }
+
+.search__field_button_disabled {
+  background: #8b8785;
+  pointer-events: none;
+}

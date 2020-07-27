@@ -1,0 +1,9 @@
+  .footer__social_icons{
+    color:white;
+    display: block;
+  }
+
+  .footer__social_icons img {
+  	width: 22px;
+  	height: 21px;
+  }

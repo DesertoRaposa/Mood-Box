@@ -1,0 +1,8 @@
+.card__like-wrap {
+	width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10 10 0 0;
+}
+

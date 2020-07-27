@@ -1,0 +1,25 @@
+
+@import url('./__inputcont_two/searchbox__inputcont_two.css');
+@import url('./__inputcont_one/searchbox__inputcont_one.css');
+
+@import url('./__inputcont_one/__field/search__field.css');
+@import url('./__inputcont_one/__field/_button/search__field_button.css');
+@import url('./__inputcont_one/__field/_input/search__field_input.css');
+@import url('./__inputcont_one/__text/search__text.css');
+@import url('./__inputcont_one/__title/search__title.css');
+
+
+
+.searchbox {
+  height: 600px;
+  //background-color: #32312f;
+  width: 100%;
+  background-image: url('../../images/43.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+
+
+
