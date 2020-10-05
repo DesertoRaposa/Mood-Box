@@ -1,0 +1,8 @@
+.popup__content {
+	width: 1200px;
+    min-height: 800px;
+    position: relative;
+    box-sizing: border-box;
+    //padding: 30px 32px;
+    display: flex;
+}

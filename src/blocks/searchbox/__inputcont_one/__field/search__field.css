@@ -1,12 +1,12 @@
 .search__field {
-    width: 90%;
+    max-width: 500px;
     height: 64px;
-    display: flex;
-    justify-content: space-between;
     margin-top: 80px;
-    background-color: white;
+    background-color: #fff;
     margin-left: 50px;
-    
+    display: inline-flex;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 .search__field:focus {

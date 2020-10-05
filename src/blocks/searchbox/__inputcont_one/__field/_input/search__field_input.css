@@ -1,15 +1,12 @@
 .search__field_input{
     width: 440px;
-    background: #FFFFFF;
+    background: #fff;
+    padding-left: 30px;
+    font-family: Montserrat,sans-serif;
+    outline: none;
     box-sizing: border-box;
     border: 0;
-    padding-left: 20px;
-    font-family: 'Montserrat', sans-serif;
-    outline:none;
 }
-
-
-
 
 @media (max-width: 320px) {
     .search__field_input{
@@ -23,3 +20,5 @@
        
     }
 } 
+
+

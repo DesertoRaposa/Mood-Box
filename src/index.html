@@ -14,7 +14,7 @@
 		<header class="header">
 			<nav class="header__content">
 				<h3 class="header__logo">
-					Mood Box.
+					Mood Box
 				</h3>
 				<div class="header__container">
 					<a class="header__menu" href="#"> Home </a>
@@ -28,46 +28,43 @@
 				<h1 class="search__title">
 				Choose your mood today </h1>
 				<form class="search__field">
-					<input type="text" name="name" class="search__field_input" placeholder="morning breakfast">
-					<button class="search__field_button"> Найти </button>
-				</form>
-			</div>
-			<div class="searchbox__inputcont_two">
-			</div>
-		</section>
-		<section class="moodboard">
-			<!--
-			<div class="moodboard__card">
-				<a class="card__cover" href="#"> </a>
-					<div class="card__like-wrap">
-						<button class="card__like-icon"></button>
-					</div>
-					<div class="card__descr">
-						<div class="card__tags">
-							<a class = "tag" href="#"> #morning </a>
-							<a class = "tag" href="#">  #breakfast </a>
-							<a class = "tag" href="#"> #orange </a>
-							<a class = "tag" href="#"> #fresh </a>
-							<a class = "tag" href="#"> #energetic </a>
-							<a class = "tag" href="#"> #food </a>
+					<!-- <div class="button-wrap"> -->
+						<input type="text" name="name" class="search__field_input" placeholder="morning breakfast">
+						<button class="search__field_button"> 
+							Найти
+						</button>
+						<!-- </div> -->
+					</form>
+				</div>
+				<div class="searchbox__inputcont_two">
+				</div>
+			</section>
+			<section class="moodboard">
+			</section>
+			<div class="popup">
+				<div class="popup__content">
+					<div class="popup__photo"></div>
+					<div class="popup__descr">
+						<h3 class="popup__title"> Mood playlist</h3>
+						<div class="playlist">
+							<iframe frameborder="0" style="border:none;width:100%;height:95%;" width="100%" height="600" src="https://music.yandex.ru/iframe/#playlist/deserto.raposa/1000">Слушайте <a href='https://music.yandex.ru/users/deserto.raposa/playlists/1000'>Special</a> — <a href='https://music.yandex.ru/users/deserto.raposa'>Deserto Raposa</a> на Яндекс.Музыке</iframe>
 						</div>
 					</div>
+				</div>
 			</div>
-		-->
-	</section>
-	<footer class="footer">
-		<div class="footer__columns">
-			<p class="footer__author">
-				© 2020 Rezeda Khairullina
-			</p>
-			<div class="footer__social">
-				<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img src="<%=require('./images/gh.png')%>" alt="Вернуться на главную страницу"> </a>
-				<a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img src="<%=require('./images/facebook.png')%>" alt="Вернуться на главную страницу"> </a>
-			</div>
+			<footer class="footer">
+				<div class="footer__columns">
+					<p class="footer__author">
+						© 2020 Rezeda Khairullina
+					</p>
+					<div class="footer__social">
+						<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img src="<%=require('./images/gh.png')%>" alt="Вернуться на главную страницу"> </a>
+						<a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img src="<%=require('./images/facebook.png')%>" alt="Вернуться на главную страницу"> </a>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</footer>
-</div>
-<script src="<%= htmlWebpackPlugin.files.js %>"></script>
-</body>
-</html>
+		<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+	</body>
+	</html>
 

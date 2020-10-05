@@ -1,0 +1,7 @@
+.popup__descr {
+	background-color: pink;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	background-color: #f3f5ff ;
+}

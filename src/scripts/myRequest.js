@@ -6,12 +6,11 @@ export class myRequest {
   getResource() {
     this.request = fetch(this.baseUrl)
     .then((response) => {
-      if (response.ok) {
+    if (response.ok) {
         return Promise.resolve(response.json());
-      }
-      return Promise.reject(`Что-то пошло не так: ${response.status}`);
-    })
+    }
+    return Promise.reject(`Что-то пошло не так: ${response.status}`);
+    });
     return this.request;
   }
-
 }
