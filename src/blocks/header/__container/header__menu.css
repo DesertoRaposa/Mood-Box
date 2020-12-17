@@ -1,6 +1,6 @@
 .header__menu {
   color: #F3F5FF;
-  margin-top: 35px;
+  font-size: 16px;
 }
 
 .header__menu:hover {
@@ -8,17 +8,3 @@
   color: #FFFFFF;
   transition: all 0.3s ease-in-out;
 }
-
-@media (max-width: 320px) {
-  .header__menu {
-    margin-top: 16px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-} 
-
-@media (min-width: 321px) and (max-width: 768px) {
-  .header__menu {
-    margin-top: 22px;
-  }
-} 

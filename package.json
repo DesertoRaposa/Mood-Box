@@ -43,8 +43,11 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "imagemin-pngquant": "^5.0.1",
-    "pngquant-bin": "^3.1.1"
+    "jquery": "^3.5.1",
+    "pngquant-bin": "^3.1.1",
+    "popper.js": "^1.16.1"
   }
 }

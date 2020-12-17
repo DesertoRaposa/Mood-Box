@@ -1,0 +1,29 @@
+#inputlg {
+  height: 64px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: Montserrat,sans-serif;
+}
+
+#btnstyle {
+  background:#E64A19;
+  color: #f3f5ff;
+  font-family: Montserrat,sans-serif;
+  outline: none;
+  border: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: none;
+}
+
+#btnstyle:hover {
+  cursor: pointer;
+  background: #DA3B01 ;
+  transition: all 0.3s ease-in-out;
+}
+
+input {outline: 0}

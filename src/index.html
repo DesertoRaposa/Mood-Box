@@ -1,70 +1,77 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="Author" content="Хайруллина Резеда">
-	<title> Mood Box </title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Author" content="Хайруллина Резеда">
+  <title> Mood Box </title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,800;0,900;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
 </head>
-<body>
-	<div class="page">
-		<header class="header">
-			<nav class="header__content">
-				<h3 class="header__logo">
-					Mood Box
-				</h3>
-				<div class="header__container">
-					<a class="header__menu" href="#"> Home </a>
-					<a class="header__menu" href="#"> About </a>
-					<a class="header__menu" href="#"> Contact </a>
-				</div>
-			</nav>
-		</header>
-		<section class="searchbox">
-			<div class="searchbox__inputcont_one">
-				<h1 class="search__title">
-				Choose your mood today </h1>
-				<form class="search__field">
-					<!-- <div class="button-wrap"> -->
-						<input type="text" name="name" class="search__field_input" placeholder="morning breakfast">
-						<button class="search__field_button"> 
-							Найти
-						</button>
-						<!-- </div> -->
-					</form>
-				</div>
-				<div class="searchbox__inputcont_two">
-				</div>
-			</section>
-			<section class="moodboard">
-			</section>
-			<div class="popup">
-				<div class="popup__content">
-					<div class="popup__photo"></div>
-					<div class="popup__descr">
-						<h3 class="popup__title"> Mood playlist</h3>
-						<div class="playlist">
-							<iframe frameborder="0" style="border:none;width:100%;height:95%;" width="100%" height="600" src="https://music.yandex.ru/iframe/#playlist/deserto.raposa/1000">Слушайте <a href='https://music.yandex.ru/users/deserto.raposa/playlists/1000'>Special</a> — <a href='https://music.yandex.ru/users/deserto.raposa'>Deserto Raposa</a> на Яндекс.Музыке</iframe>
-						</div>
-					</div>
-				</div>
-			</div>
-			<footer class="footer">
-				<div class="footer__columns">
-					<p class="footer__author">
-						© 2020 Rezeda Khairullina
-					</p>
-					<div class="footer__social">
-						<a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img src="<%=require('./images/gh.png')%>" alt="Вернуться на главную страницу"> </a>
-						<a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img src="<%=require('./images/facebook.png')%>" alt="Вернуться на главную страницу"> </a>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="<%= htmlWebpackPlugin.files.js %>"></script>
-	</body>
-	</html>
 
+<body>
+  <div class='bg-color'>
+    <div class="page">
+      <header class="navbar navbar-expand-lg navbar-dark header p-2">
+        <a class="navbar-brand header__logo pl-4" href="#"> Mood Box</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav p-2">
+            <a class="nav-link active header__menu " href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link header__menu" href="#">About</a>
+            <a class="nav-link header__menu" href="#">Contact</a>
+          </div>
+        </div>
+      </header>
+      <section class="container-fluid searchbox">
+        <div class="form-group row m-0 pb-4">
+          <div class="col col-sm p-4">
+            <h1 class="search__title mx-4 my-5">
+              Choose your <br />mood today </h1>
+            <div class="col-8 col-sm-10 col-md-8 col-lg-6 col m-4 prop d-flex pr-0 search__field">
+              <input class="flex-grow-1 prop pl-2" id="inputlg" type="text" placeholder="morning breakfast">
+              <button type="button" class="rounded-0" id="btnstyle">Найти</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="moodboard">
+      </section>
+      <div class="popup">
+        <div class="popup__content">
+          <div class="popup__photo"></div>
+          <div class="popup__descr">
+            <h3 class="popup__title"> Mood playlist</h3>
+            <div class="playlist">
+              <iframe frameborder="0" style="border:none;width:100%;height:95%;" width="100%" height="600"
+                src="https://music.yandex.ru/iframe/#playlist/deserto.raposa/1000">Слушайте <a
+                  href='https://music.yandex.ru/users/deserto.raposa/playlists/1000'>Special</a> — <a
+                  href='https://music.yandex.ru/users/deserto.raposa'>Deserto Raposa</a> на Яндекс.Музыке</iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__columns">
+          <p class="footer__author">
+            © 2020 Rezeda Khairullina
+          </p>
+          <div class="footer__social">
+            <a class="footer__social_icons" href="https://github.com/DesertoRaposa" target="_blank"> <img
+                src="<%=require('./images/gh.png')%>" alt="Вернуться на главную страницу"> </a>
+            <a class="footer__social_icons" href="https://www.facebook.com/" target="_blank"> <img
+                src="<%=require('./images/facebook.png')%>" alt="Вернуться на главную страницу"> </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </div>
+</body>
+
+</html>
