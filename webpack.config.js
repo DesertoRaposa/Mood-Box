@@ -3,9 +3,8 @@ const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-
 const webpack = require('webpack');
-const isDev = process.env.NODE_ENV === 'development';
+/* const isDev = process.env.NODE_ENV === 'development'; */
 
 module.exports = {
 	entry: { 
@@ -18,57 +17,51 @@ module.exports = {
 	},
 	module: {
 		rules: [
-		{
-			test: /\.(eot|ttf|woff|woff2)$/,
-			use: {
-				loader: 'file-loader' ,
-				options: {
-					name: 'fonts/[name].[ext]',
-				},
-			},
-		},
-
-		{
-		test: /\.(png|jpe?g|gif|ico|svg)$/i,
-
-		use: [
-		{
-			loader: 'file-loader',
-			options: {
-			name: './images/[name].[ext]',
-			esModule: false
-			}
-		},
-		{
-			loader: 'image-webpack-loader',
-			options: {}
-		},
-			]
-		},
-
-		{
-		test: /\.js$/,
-		exclude: /node_modules/,
-		use: { 
-			loader: "babel-loader" 
-			}
-		},
-		{
-		test: /\.css$/,
-		use: [
-			{
-			loader:MiniCssExtractPlugin.loader,
-			options: {
-				publicPath: '../',
-				},
-			},
-			'css-loader'
-			],
-		},
-
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        use:
+        {
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]'
+          }
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif|ico|svg)$/i,
+        use: [
+        {
+        loader: 'file-loader',
+        options: {
+          name: './images/[name].[ext]',
+          esModule: false
+          }
+        },
+        {
+        loader: 'image-webpack-loader',
+        options: {}
+        }
+        ]
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader','eslint-loader']
+      },
+      {
+        test: /\.css$/,
+        use: [
+        {
+          loader:MiniCssExtractPlugin.loader,
+          options: {
+            publicPath: '../',
+          }
+        },
+          'css-loader'
+        ],
+      },
 		]
 	},
-
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'styles/style.[contenthash].css'
@@ -92,4 +85,3 @@ module.exports = {
 		})
 	]
 };
-
